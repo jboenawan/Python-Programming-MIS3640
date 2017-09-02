@@ -5,13 +5,14 @@ print(seconds)
 """ how many miles are there in 10 km? Hint: 1.61km
 equals to a mile."""
 
-miles = float(10/1.61)
+miles = int(10/1.61)
 print(miles)
 
 #What is your average pace? (time per mile in minutes and sec)#
-pace_in_sec = (seconds/miles)
+pace_in_sec = int((seconds/miles))
 print(pace_in_sec)
-pace_in_min = ((seconds/miles)/60)
+
+pace_in_min = int(((seconds/miles)/60))
 print(pace_in_min)
 
 
