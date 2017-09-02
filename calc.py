@@ -17,4 +17,4 @@ print(pace_in_min)
 
 #What is your average speed in miles per hour?#
 
-print((10/1.61)/2562*60*60)
+print(miles/seconds*60*60)
