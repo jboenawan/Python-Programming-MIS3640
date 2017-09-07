@@ -17,3 +17,24 @@ print(pace_in_min)
 
 #What is your average speed in miles per hour?#
 print(miles/seconds*60*60)
+
+###EXERCISE 1 - Variable, Expresions, and Statements###
+
+#What is the volume of a sphere with radius 5?
+
+"""pi = 3.14
+rad = int(input("Radius?"))
+sphere = (4/3)*pi*(rad**3)
+
+print ("The volume of a sphere with " rad " radius is %d", sphere)"""
+
+#What is the total wholesale cost for 60 copies? 
+
+def wholesale_cost():
+    price = 24.95
+    bookstore = 0.40
+    books_amount = int(input("How many books are you buying?"))
+    if books_amount == 1:
+        print(price - 3)
+    elif books_amount > 1:
+        print((price - 3)+((books_amount-1)*price)*0.75)
