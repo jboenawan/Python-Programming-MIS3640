@@ -21,20 +21,28 @@ print(miles/seconds*60*60)
 ###EXERCISE 1 - Variable, Expresions, and Statements###
 
 #What is the volume of a sphere with radius 5?
-
-"""pi = 3.14
-rad = int(input("Radius?"))
+pi = 3.14
+rad = float(input("Radius? \n"))
 sphere = (4/3)*pi*(rad**3)
 
-print ("The volume of a sphere with " rad " radius is %d", sphere)"""
+print ("The volume of a sphere with {:.2f} radius is {:04.1f}.".format(rad,sphere))
 
 #What is the total wholesale cost for 60 copies? 
+cost = (24.95-24.95*0.4)*60+3+((60-1)*0.75)
+print('the total wholesale cost for 60 books is $%.2f' % cost)
+print("The total wholesale cost for 60 books is ${:.2f}.".format(cost))
 
-def wholesale_cost():
-    price = 24.95
-    bookstore = 0.40
-    books_amount = int(input("How many books are you buying?"))
-    if books_amount == 1:
-        print(price - 3)
-    elif books_amount > 1:
-        print((price - 3)+((books_amount-1)*price)*0.75)
+#if i leave my house at 6:52am and run 1 mile at an easy pace (8:15 per mile), 
+#then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, 
+#what time do I get home for breakfast? (hint: pace is time/miles)
+
+
+
+#if my average grade rises from 82 to 89. What is the % of the increase?
+yah = (89-82)/82*100
+print("the percentage increase is {:04.1f}%.".format(yah)) #4 digits places including the dot. 
+print("the percentage increase is %04.1f%%" % yah)
+
+#format the result as 'xx.x%'. Keep one figure after decimal point. 
+print("the percentage increase is {:04.1f}%.".format(yah)) #4 digits places including the dot. 
+print("the percentage increase is %04.1f%%" % yah)

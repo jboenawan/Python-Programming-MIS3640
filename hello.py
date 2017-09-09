@@ -29,7 +29,7 @@ last_name = " Boe "
 
 print ((first_name + last_name)*10) #cannot use the , because it will treat it as string? 
 
-print("hello, %s %s" % first_name, last_name) # %s refers to the "Josie" string
+print("hello, %s" % (first_name + last_name)) # %s refers to the "Josie" string
 
 print ('Today is %2d-%02d.' % (9,5)) #%2d is 2 digits. if there is a 0, then it inputs it as one digit. 
 print ()
