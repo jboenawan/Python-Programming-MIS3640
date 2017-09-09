@@ -11,7 +11,7 @@ print ("I\'m learning\nPython.") #\n enters it in another line
 print('\\n')
 print(r'\\\t\\') #print whatever it is after r 
 
-print('\t\\') #why is it like this 
+print('\t\\')
 
 #BOOLEANS - conditional statement
 
@@ -21,3 +21,6 @@ if age >21:
     print("yes you can")
 else: 
     print ("no, you are not allowed")
+
+import time 
+time.time()
