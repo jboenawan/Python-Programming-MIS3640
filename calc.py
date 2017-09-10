@@ -36,8 +36,24 @@ print("The total wholesale cost for 60 books is ${:.2f}.".format(cost))
 
 #3.if i leave my house at 6:52am and run 1 mile at an easy pace (8:15 per mile), 
 #then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, 
-#what time do I get home for breakfast? (hint: pace is time/miles)
-easy_hr = 
+#what time do I get home for breakfast?
+
+easy_hr = (8+(15/60))/60
+tempo_hr = (7+(12/60))/60
+start_hr = 6+(52/60)
+runningtime_hr = easy_hr*2 + tempo_hr*3
+endtime_hr = start_hr + runningtime_hr
+print(endtime_hr) #7.50167
+endtime_min = 0.50167*60
+print(endtime_min) #30.1002
+endtime_sec = (endtime_min - int(endtime_min)) *60
+print(endtime_sec) #6 seconds
+
+print("Time I get home is {:2d}:{:2d}:{:02d}AM.".format(int(endtime_hr),int(endtime_min),int(endtime_sec)))
+
+
+a = 7.55
+print(int(a)) #python does not round up using int. Integer gives you digits before decimals. 
 
 
 #4.if my average grade rises from 82 to 89. What is the % of the increase?
