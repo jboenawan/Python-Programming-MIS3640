@@ -22,5 +22,13 @@ if age >21:
 else: 
     print ("no, you are not allowed")
 
+##################### EXERCISE ##########################
 import time 
 time.time()
+print time.time()
+current = time.time()
+second = current % 60 
+minutes = (current//60) % 60 # // gives you the integer part of the division 
+hours = (current//60)//60 % 24# % gives you the remainder of the division. 
+days = current// 60 //60 //24
+print ('Current time: %d days, %d hours, %d minutes, %d seconds from Epoch.' % (days, hours, minutes, second))
