@@ -68,6 +68,7 @@ def my_abs(number):
     print(abs(number))
 my_abs(-132)
 
+######################### EXERCISE 1 - QUADRATIC FORMULA ########################
 def quad(a, b, c):
     first = (-b+math.sqrt(b**2- 4*a*c))/2*a
     second = (b+math.sqrt(b**2 - 4*a*c))/2*a
