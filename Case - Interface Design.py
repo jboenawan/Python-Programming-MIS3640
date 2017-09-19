@@ -4,35 +4,57 @@ import math
 #################### no. 1 #######################
 
 jo = turtle.Turtle()
-def arc(t, r, angle):
-    jo.speed(0)
-    arc_length = 2*math.pi*r*angle/360
-    n = int(arc_length/3) +1 
-    step_length = arc_length/n
-    step_angle = angle/n
-    for i in range (n):
-        t.fd(step_length)
-        t.lt(step_angle)
-    jo.setposition()
-arc(jo, 100, 360)
+
+
+turtle.speed(7)
+turtle.circle(150)
+turtle.penup()
+turtle.sety(150)
+turtle.pendown()
+turtle.lt(30)
+
+for i in range(4):
+    turtle.fd(150)
+    turtle.rt(120)
+    turtle.fd(150)
+    turtle.rt(120)
+    turtle.fd(150)
+    turtle.lt(150)
+
+for i in range(4):
+    turtle.penup()
+
+    turtle.pendown()
+    turtle.circle(150)
 
 
 
 ##################### no. 2 #######################
 
-def arc(t, r, angle):
-    arc_length = 2*math.pi *r*angle/360
-    n = int(arc_length/3) + 1
-    step_length = arc_length/n
-    step_angle = angle/n
-    
+def flo(t,r):
+    t.ht()
+    t.circle(r)
+    t.penup()
+    t.sety(r)
+    t.pendown()
+    for i in range(6):
+        t.circle(r,60)
+        t.lt(120)
+        t.circle(r,60)
+        t.lt(60)
 
-
-
+# flo(jo,150)
 
 ##################### no. 3 #######################
-
-
+# turtle.ht()
+# turtle.pensize(5)
+# turtle.lt(180)
+# turtle.circle(-50, extent=175)
+# turtle.circle(50, extent = 175)
+# turtle.circle(100)
+# turtle.pendown()
+# turtle.sety(10)
+# turtle.circle(20)
 
 
 turtle.mainloop()
