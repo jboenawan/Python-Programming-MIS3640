@@ -64,13 +64,35 @@ def twice(name):
     print(name)
 twice("Josie Boe")
 
-def my_abs(number):
-    print(abs(number))
-my_abs(-132)
+# def my_abs(number):
+#     print(abs(number))
+# my_abs(-132)
+
+def my_abs(n):
+    if isinstance(n, int) or isinstance(n,float):
+        print(n)
+        if n >= 0:
+            print (n) 
+        else: 
+            print (n)
+    else: 
+        print("Invalid value")
+
+def myabs(n):
+    if n == int:
+        print (n)
+    else:
+        print("invalid value")
+myabs(123)
 
 ######################### EXERCISE 1 - QUADRATIC FORMULA ########################
 def quad(a, b, c):
     first = (-b+math.sqrt(b**2- 4*a*c))/2*a
     second = (b+math.sqrt(b**2 - 4*a*c))/2*a
     print("The square root of {:d}, {:d}, {:d} is {:.2f}, {:.2f}.".format(a,b,c,first,second))
-quad(-1, 2, 1)
+
+a = float(input("What is your first variable? "))
+b = float(input("What is your print second variable? "))
+c = float(input("What is your third variable? "))
+print("The answer is" + quad(a,b,c))
+
