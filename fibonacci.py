@@ -1,6 +1,6 @@
 def fibb(n):
+    result = 1
     if n <= 2: 
-        result = 1
         return result
     else:
         result = fibb(n-2) + fibb(n-1)

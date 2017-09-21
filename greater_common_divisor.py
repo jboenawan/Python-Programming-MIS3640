@@ -1,4 +1,7 @@
 def gcd(a,b):
-    if b % a == 0: 
-        return something 
-    elif ... 
+    number = 2
+    if a % number != 0 and b % number != 0:
+        return number+1 
+    else:
+        return gcd(a,b)
+print(gcd(6,12))
