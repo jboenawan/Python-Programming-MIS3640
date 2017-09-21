@@ -52,9 +52,11 @@ def flo(t,r):
 # turtle.circle(-50, extent=175)
 # turtle.circle(50, extent = 175)
 # turtle.circle(100)
+# turtle.penup()
+# turtle.lt(180)
+# turtle.sety(100/3)
 # turtle.pendown()
-# turtle.sety(10)
-# turtle.circle(20)
+# turtle.circle(100/6)
 
 
 turtle.mainloop()
