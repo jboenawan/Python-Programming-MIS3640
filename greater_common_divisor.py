@@ -5,3 +5,4 @@ def gcd(a,b):
     else:
         return gcd(a,b)
 print(gcd(6,12))
+#help
