@@ -14,6 +14,12 @@ def pos_neg(a, b, negative):
     else:
         return False
 
+####### Prof. Solution #####
+    if negative: 
+        return a < 0 and b < 0 
+    else: 
+        return a * b < 0  # is it true or not? 
+
 
 # Expected outputs:
 
@@ -55,10 +61,8 @@ def diff21(n):
     abs_d = abs(21-n)
     if int(n) > 21:
         return abs_d * 2
-    elif int(n) < 21:
-        return abs_d
     else:
-        return 0
+        return abs_d
 
 
 # Expected outputs:
