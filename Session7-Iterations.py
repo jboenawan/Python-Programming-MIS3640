@@ -35,4 +35,46 @@ def countdown(n):
         n = n-1
     print("Blastoff!")
 
-countdown(10)
+# countdown(10)
+
+iteration = 0 
+count = 0 
+while iteration < 5: 
+    for letter in "Hello, world":
+        count +=1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration +=1
+
+iteration = 0
+while iteration < 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+# count resets to 0
+
+iteration = 0
+while iteration < 5:
+    count = 0
+    for letter in "hello, world":
+        count += 1
+        if iteration % 2 == 0:
+            break
+    print("Iteration " + str(iteration) + "; count is: " + str(count))
+    iteration += 1 
+
+
+while True: 
+    line = input('> ')
+    if line == "done":
+        break
+    print(line)
+
+mysum = 0
+for i in range(5,11,2):
+    mysum += i
+    if mysum ==5:
+        break
+
+print(mysum)
