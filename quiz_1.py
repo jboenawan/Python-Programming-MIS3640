@@ -43,9 +43,7 @@ def leap_year(year):
 
     Returns True if year is a leap_year, False if year is not a leap_year.
     """
-    if year % 4 == 0 and not year %100 == 0:
-        return True 
-    elif year % 400 == 0:
+    if (year % 4 == 0 and not year %100 == 0) or year % 400 == 0:
         return True 
     else: 
         return False
@@ -71,10 +69,8 @@ Write a function with loops that computes The sum of all squares between
 
 
 def sum_squares(n):
-    if n == 1:
-        return 1
     result = 0
-    for i in range(1,n+1,1):
+    for i in range(1,n+1):
         result = result + (i*i)
     return result 
 
