@@ -10,19 +10,8 @@ def crazy_about_9(a, b):
 
     Returns True if either one is 9, or if their sum or difference is 9. 
     """
-    sum1 = abs(a+b)
-    diff = a - b 
-    diff1 = b-a
-    if (a == 9 or b == 9):
-        return True
-    elif sum1==9:
-        return True
-    elif diff == 9:
-        return True 
-    elif diff1==9:
-        return True
-    else:
-        return False 
+    return a == 9 or b == 9 or abs(a-b)==9 or a+b==9 or abs(b-a)==9
+
 
 
 # When you've completed your function, uncomment the
@@ -86,7 +75,7 @@ def sum_squares(n):
         return 1
     result = 0
     for i in range(1,n+1,1):
-        result = result + i
+        result = result + (i*i)
     return result 
 
 
