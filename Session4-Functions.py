@@ -86,13 +86,14 @@ def myabs(n):
 myabs(123)
 
 ######################### EXERCISE 1 - QUADRATIC FORMULA ########################
+a = float(input("What is your first variable? "))
+b = float(input("What is your print second variable? "))
+c = float(input("What is your third variable? "))
 def quad(a, b, c):
     first = (-b+math.sqrt(b**2- 4*a*c))/2*a
     second = (b+math.sqrt(b**2 - 4*a*c))/2*a
     print("The square root of {:d}, {:d}, {:d} is {:.2f}, {:.2f}.".format(a,b,c,first,second))
 
-a = float(input("What is your first variable? "))
-b = float(input("What is your print second variable? "))
-c = float(input("What is your third variable? "))
+
 print("The answer is" + quad(a,b,c))
 
