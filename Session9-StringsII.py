@@ -4,7 +4,7 @@ letter = team[1]
 print(letter)
 
 print(team[len(team)-1])
-print(team[-1])
+print(team[-1]) #shorter version of the above one. 
 
 
 for i in range(len(team)):
@@ -26,7 +26,7 @@ for i in letter:
 
 print(team[::-1]) #reverse the words. 
 
-print(team[::-2]) #skips over one word
+print(team[::-2]) #skips over one word starting from the end. 
 
 print(team[::1])
 

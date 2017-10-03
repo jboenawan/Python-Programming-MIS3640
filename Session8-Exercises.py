@@ -8,15 +8,17 @@ str.replace("and","&")
 def iya(n):
     for i in n:
         i += ord(i)
-        return i 
+        return i
 
 def price(ok):
     ok = str(ok)
     pp = 0 
     for i in ok:
-        i = ord(i)
+        i = ord(i) + pp
+        pp += 1
     return i
 
+price("banana")
 # studio code is broken ._.
 
 print("bananas $",price("bananas"))
