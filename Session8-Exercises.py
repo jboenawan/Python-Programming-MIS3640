@@ -5,10 +5,6 @@ str.strip("lie")
 str.replace("and","&")
 
 ############################## EXERCISE 4 #############################
-def iya(n):
-    for i in n:
-        i += ord(i)
-        return i
 
 def price(ok):
     ok = str(ok)
@@ -19,7 +15,7 @@ def price(ok):
     return i
 
 price("banana")
-# studio code is broken ._.
+# studio code is broken ._. cannot run function. 
 
 print("bananas $",price("bananas"))
 print("rice $",price("rice"))
