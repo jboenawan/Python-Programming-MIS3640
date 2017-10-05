@@ -86,8 +86,6 @@ def is_abecedarian(word):
         previous = c
     return True 
 
-print(is_abecedarian("idkwhatthisis"))
-
 def is_abecedarian(word):
     if len(word) <=1:
         return True
@@ -102,4 +100,7 @@ def is_abecedarian(word):
             return False
         the += 1
     return True
+
+print(is_abecedarian("idkwhatthisis"))
+print(is_abecedarian("abcdef"))
 
