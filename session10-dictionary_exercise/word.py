@@ -77,3 +77,29 @@ def find_words_no_vowel():
 # print("The percentage of the words with no vowel is {.2f}%.".format(find_words_no_vowel()))
 
 ############## EXERCISE 2 ###############
+
+def is_abecedarian(word):
+    previous = word[0]
+    for c in word:
+        if c < previous: 
+            return False
+        previous = c
+    return True 
+
+print(is_abecedarian("idkwhatthisis"))
+
+def is_abecedarian(word):
+    if len(word) <=1:
+        return True
+    if word[0] > word[1]:
+        return False
+    return is_abecedarian(word[1:])
+
+def is_abecedarian(word):
+    the = 0
+    while the < len(word)-1:
+        if word[the+1] < word[the]:
+            return False
+        the += 1
+    return True
+

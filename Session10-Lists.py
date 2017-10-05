@@ -12,3 +12,5 @@ chr(ord('K')+2)
 
 for i in string: 
     i = 
+
+#################### LISTS, TUPLES, AND MORE #####################
