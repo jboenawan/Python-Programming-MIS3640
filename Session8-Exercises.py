@@ -3,6 +3,7 @@ str = "i like big dogs and I can't lie"
 str.split("and")
 str.strip("lie")
 str.replace("and","&")
+str.lstrip("i") #left of the string. 
 
 ############################## EXERCISE 4 #############################
 
