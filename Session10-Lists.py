@@ -41,7 +41,22 @@ b = [4, 5, 6]
 c = a + b
 # print(c)
 
-print(a*2)
+def only_upper(t):
+    res = []
+    for s in t:
+        if s.isupper():
+            res.append(s)
+    return res
+
+print(only_upper('Babson collEge'))
+
+list = ['a'.'b','c']
+list.append('d')
+
+list.extend('efg')
+list.insert(3,'oops')
+
+
 
 
 
