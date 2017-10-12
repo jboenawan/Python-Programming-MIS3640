@@ -21,13 +21,13 @@ def cumsum(t):
     >>> cumsum(t)
     [1, 3, 6]
     """
-    res = []
-    res = 0
+    result = []
+    counter = 0
     for i in t:
-        res += i
-        res.append(t)
+        counter += i
+        result.append(counter)
 
-    return
+    return result
 
 
 
