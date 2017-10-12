@@ -1,19 +1,14 @@
-def cumsum(t):
-    """Computes the cumulative sum of the numbers in t.
-    t: list of numbers
-    returns: list of numbers
-    Expected output:
-    >>> t = [1, 2, 3]
-    >>> cumsum(t)
-    [1, 3, 6]
-    """
-    result = []
-    counter = 0
-    for i in t:
-        counter += i
-        result.append(counter)
+def histogram(s):
+    d = dict()
+    for c in s:
+        d[c] = d.get(c,0) + 1 
+    return d
 
-    return result
+h = histogram ('Bookbookkeeper')
+print(sorted(h))
 
-team = [3,2,3,2]
-print(cumsum(team))
+def print_hist():
+    for c in h:
+        print(c,h[c])
+
+print_hist()
