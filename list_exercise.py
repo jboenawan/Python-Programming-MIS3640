@@ -25,7 +25,7 @@ def cumsum(t):
     res = 0
     for i in t:
         res += i
-        result.append(total)
+        res.append(t)
 
     return
 
