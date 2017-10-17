@@ -55,3 +55,15 @@ print_hist()
 for k,v in d.items():
     print(k,v)
 #returns two columns with key and values. 
+
+
+lst = [1,2,3,3]
+len(lst)
+
+s = set(lst) #return {1,2,3}
+d = {'a': 1, 'b': 1}
+set(d.values()) # returns unique values of {1}
+
+t = {2,3,4}
+s.union(t) #overlapping of sets. {1,2,3,4}
+
