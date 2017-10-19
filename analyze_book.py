@@ -18,7 +18,10 @@ def process_file(filename, skip_header):
         if line.startswith('*** END OF THIS PROJECT'):
             break
         # INSERT CODE BELOW
-        pass
+        line = line.replace('-',' ')
+        strippables = string.punctuation + string.whitespace
+
+        
 
     return hist
 
