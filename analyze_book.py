@@ -100,6 +100,7 @@ def random_word(hist):
     for word, freq in hist.items():
         t.extend([word]) * freq)
     return random.choice(t)
+    # do not how to modify
 
 
 def main():
