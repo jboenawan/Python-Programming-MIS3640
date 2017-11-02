@@ -15,7 +15,9 @@ def point_in_circle(point, circle):
     point: Point object
     circle: Circle object
     """
-
+    d = distance_between_points(point, circle.center)
+    print(d)
+    return d <= circle.radius
 
 
 def rect_in_circle(rect, circle):

@@ -4,17 +4,17 @@ class Time:
     attributes: hour, minute, second
     """
 
-# time = Time()
-# time.hour = 1
-# time.minute = 50
-# time.second = 30
+time = Time()
+time.hour = 1
+time.minute = 50
+time.second = 30
 
 # print(time.hour, time.minute, time.second)
 
-# later = Time()
-# later.hour = time.hour
-# later.minute = time.minute + 5
-# later.second = time.second
+later = Time()
+later.hour = time.hour
+later.minute = time.minute + 5
+later.second = time.second
 
 # print(later.hour, later.minute, later.second)
 
@@ -28,14 +28,23 @@ def print_time(t):
 
     t: Time object
     """
+    print("{:2d}:{:2d}:{:2d}".format(t.hour,t.minute,t.second))
 
-# print_time(time)
-# print_time(later)
+print_time(time)
+print_time(later)
 
 
 def is_after(t1, t2):
     """Returns True if t1 is after t2; false otherwise."""
-
+    if t1.hour > t2.hour:
+        return True
+    elif t1.hour < t2.hour:
+        return False
+    elif t1.minute > t2.minute:
+        return True
+    elif t1.minute < t2.minute:
+        return False
+    
 
 # print(is_after(time, later))
 # print(is_after(later, time))
@@ -154,9 +163,18 @@ def substract_time(t1, t2):
 
     returns: Time
     """
+    result = time_to_int(t1) - time_to_int(t2)
+    return int_to_time(result)
 
-# print_time(substract_time(done, duration))
+done = Time()
+done.hour, done.minute, done.second = 14, 30, 30
+
+duration = Time()
+duration.hour, duration.minute, duration.second = 1, 40, 50
+
+print_time(substract_time(done, duration))
 # print_time(substract_time(time, later))
+
 
 """"""""""""""""""""""""""""""""""""
 # Exercise 4
@@ -165,11 +183,14 @@ def substract_time(t1, t2):
 
 def mul_time(t1, factor):
     """Multiplies a Time object by a factor."""
+    assert valid_time(t1)
+    result = time_to_int(t1)*factor 
+    return int_to_time(result)
     
 
-# print_time(time)
-# print('after multiplied by 5:', end=' ')
-# print_time(mul_time(time, 5))
+print_time(time)
+print('after multiplied by 5:', end=' ')
+print_time(mul_time(time, 5))
 
 
 def main():
