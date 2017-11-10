@@ -38,15 +38,6 @@ def skip_gutenberg_header(fp):
         if line.startswith('*** START OF THIS PROJECT'):
             break
 
-        line = line.replace('-',' ')
-        strippables = string.punctuation + string.whitespace
-
-        for word in line.split():
-            word = word.strip(strippables)
-            word = word.lower()
-            
-            hist[word] = hist.get(word, 0) + 1
-
 def total_words(hist):
     """Returns the total of the frequencies in a histogram."""
     return sum(hist.values())
@@ -133,4 +124,4 @@ if __name__ == '__main__':
 ##################### NOTES ########################
 
 s.append(w) 
-s.extend(w) #concatenate the whole list into one. 
+s.extend(w) #concatenate all list into one. 
